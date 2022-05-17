@@ -1,0 +1,173 @@
+ *
+ {
+     margin: 0px ;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+.navclass
+    {
+        background-color: bisque;
+        display: flex;
+        justify-content: space-around;
+        height: 10vh;
+        align-items: center;
+    }
+
+.body
+    {
+        font-family: 'Josefin Slab', serif;
+
+        background-image: url('4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        background-position:center;
+    }    
+.divhome
+    {
+        letter-spacing: 15px;
+        font-size: 20px;
+    }   
+.divhome a
+    {
+        text-decoration: none;
+        color: rgb(204, 214, 235);
+        font-size: 25px;
+    }   
+ 
+.divhome :hover
+    {
+        color: brown;
+    }    
+.navlinks
+    {
+       /* background-color: wheat; */
+        display: flex;
+        width: 70%;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+
+    }     
+.navlinks a
+    {
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: brown;
+        font-size: 14px;
+    }   
+
+.navlinks li :hover
+    {
+	    color: burlywood;
+    }  
+.bigscreen
+    {
+        display: flex;
+        color: brown;
+        margin: 50px;
+        padding: 100px;
+        background-color: beige;
+        justify-content: space-around;
+        align-items: center;
+    }   
+.smallscreen
+    {
+        color: chocolate;
+        display: none;
+
+        margin: 50px;
+        padding: 100px;
+        background-color: beige;
+        justify-content: space-around;
+        align-items: center;
+    }   
+.BHB
+    {
+        display: none;
+    }
+
+
+
+
+@media screen and (max-width: 768px)
+    {
+        .bigscreen
+        {
+            display: none;
+            color: brown;
+            margin: 50px;
+            padding: 100px;
+            background-color: beige;
+            justify-content: space-around;
+            align-items: center;
+        }   
+        .smallscreen
+        {
+            color: chocolate;
+            display: flex;
+    
+            margin: 50px;
+            padding: 100px;
+            background-color: beige;
+            justify-content: space-around;
+            align-items: center;
+        }   
+        
+        .navlinks
+        {
+            background-color: peachpuff; 
+            position: absolute;
+            left: 0px;
+            top: 10vh;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 60vh;
+            justify-content: space-around;
+            transform: translateY(-200%);
+            transition: transform 0s ease;
+        }   
+
+        .navlinks li
+        {
+            background-color: rgb(250, 189, 165);
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            opacity: .9;
+        } 
+	
+	    .navlinks li :hover
+        {
+	        color: lightgoldenrodyellow ;
+        }  
+
+        .navlinkActivate
+        {
+            transform: translateY(0%);
+            transition: transform 2s ease;
+        }
+
+
+        .BHB 
+        {
+            display: block;
+            min-width: 30px;
+            min-height: 30px;
+        }
+ 
+        .BHB input
+        {
+            min-width: 30px;
+            min-height: 30px;
+        }
+
+        .BHB :hover
+        {
+            background: rgb(126, 119, 119);
+        }
+    }       

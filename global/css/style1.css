@@ -1,0 +1,1068 @@
+.rounded {
+  width: 100px;
+}
+
+.img-thumbnail {
+  width: 80px !important;
+}
+
+.message {
+  display: none;
+}
+
+#overlay {
+  background: #ffffff;
+  color: #666666;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  float: left;
+  text-align: center;
+  padding-top: 25%;
+  opacity: 0.8;
+}
+
+.myBtn123 {
+  background: blue;
+  color: yellow;
+}
+
+.divProgrammeSelect {
+  background: yellow;
+}
+
+.myImg {
+  padding: 0%;
+  margin: 0%;
+  width: 50px;
+}
+
+.makedark {
+  background: rgb(192, 22, 22);
+}
+
+.makeblue {
+  background: rgb(48, 46, 168);
+}
+
+.divGetSlotDetailsFormContainer {
+  background: rgb(219, 229, 240);
+  max-width: 100px;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignCentre {
+  text-align: center;
+}
+
+.rowMargin {
+  margin: 1vh;
+}
+
+.rowMargin-xx {
+  margin: .5vh;
+}
+.rowMargin2 {
+  margin: 2%;
+}
+
+.addPadding {
+  padding: 10%;
+}
+
+.addPadding2 {
+  padding: 1%;
+}
+
+.addMargin {
+  margin: 10%;
+}
+
+.addMargin2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+.courseRowBackground {
+  background-color: #d6e5f7;
+}
+
+.bgclasss2 {
+  background-color: #ccc7b2;
+}
+
+.bgclasss1 {
+  background-color: #ccc7b2;
+}
+
+.rowSpacing {
+  border-spacing: 0 20px;
+}
+
+.slno {
+  color: rgb(34, 11, 240);
+}
+
+.makewhite {
+  color: rgb(240, 234, 231);
+}
+
+.limitMaxWidth {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.seventy {
+  max-width: 70%;
+}
+
+.alignContentCenter {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.alignContentCentervertical {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.alignContentCenteHorizontel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.alignContentLeftvertical {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: left;
+  justify-content: left;
+  align-items: left;
+}
+
+.textcenter {
+  align-self: center;
+}
+
+.loginerrortextcolor {
+  color: rgb(236, 25, 25);
+}
+
+.fullheight {
+  min-height: 100vh;
+}
+
+.putbgimage {
+  background: linear-gradient(to right, rgb(149, 149, 218), rgb(210, 217, 233));
+}
+
+.navbar {
+  padding: 4.5rem;
+}
+
+.navlinks {
+  /* background-color: wheat; */
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.mainContainer {
+  padding-top: 4rem;
+}
+
+.mainContainerLoginpage {
+  margin-top: 20vh;
+  padding-top: 1rem;
+}
+
+.addPaddingSm {
+  padding: 1%;
+}
+
+.addPaddingSm-xx {
+  padding: .5%;
+}
+
+.addmarginsm {
+  margin: 1%;
+}
+
+.ddlSelectGrade {
+  color: lightskyblue;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+div.sticky1 {
+  position: sticky;
+  top: 3rem;
+  z-index: 30;
+}
+
+div.sticky2 {
+  position: sticky;
+  top: 5rem;
+  background: #808080;
+  z-index: 30;
+}
+.sticky3 {
+  position: sticky!important;
+  top: 5rem!important;
+  background: white!important;
+  z-index: 30!important;
+}
+
+.addpaddingmd {
+  padding: 5%;
+}
+
+.addpaddingxsm {
+  padding: .5%;
+}
+
+.bringforward {
+  z-index: 10;
+}
+
+.infotext {
+  font-size: 30px;
+  text-shadow: 0px 0px;
+  font-weight: lighter;
+}
+
+.aligncontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.makefullscreen {
+  min-height: 95vh;
+}
+
+.pageBackground {
+  background: rgb(236, 233, 233);
+}
+
+.infotext-s {
+  font-size: 25px;
+  text-shadow: 0px 0px;
+  font-weight: lighter;
+}
+
+.addmarginsm-x {
+  margin: .2%;
+}
+
+.addPaddingSm-x {
+  padding: .2%;
+}
+
+.collapsetostrip {
+  max-height: 8vh;
+  overflow: hidden;
+  border-style: solid;
+  border-color: rgb(243, 56, 9);
+  background: rgb(169, 178, 189);
+  border-width: 1px;
+}
+
+.stripButtonTop {
+  display: flex;
+  align-items: center;
+  max-height: 10px;
+  justify-content: space-around;
+}
+
+.stripButtonBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 10px;
+}
+
+.arrow {
+  border: solid rgb(241, 189, 189);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.stripButtonTop:hover {
+  background-color: yellow;
+}
+
+.stripButtonBottom:hover {
+  background-color: yellow;
+}
+
+hr.new4 {
+  border: .1px solid rgb(238, 69, 27);
+}
+
+hr.new5 {
+  border: .05px solid rgb(202, 202, 238);
+}
+
+hr.new3 {
+  border: .1px solid rgb(159, 240, 177);
+}
+
+.loginrow {
+  padding: 15px;
+  margin: 1%;
+}
+
+.logintext {
+  font-size: x-large;
+  font-weight: 350;
+  padding: 1%;
+}
+
+.loginbackground {
+  background: #d8dbdf;
+}
+
+.loginbodybackground {
+  background: #d8e2f0;
+}
+
+input[type="password"], select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="text"], select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus, select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type="password"]:focus, select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.summaryrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: .25%;
+  margin: .1%;
+}
+
+.summarydata {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: white;
+  color: rgb(102, 136, 228);
+  cursor: pointer;
+}
+
+.summarydatamute {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0%;
+  background: transparent;
+  color: rgb(39, 39, 41);
+  font-weight: bolder;
+}
+
+.summarydata:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgb(241, 130, 130);
+  color: rgb(102, 136, 228);
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.subsummarydata {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgb(207, 179, 179);
+  color: rgb(30, 68, 221);
+}
+
+.summarydatasmall {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(226, 164, 164, 0.432);
+  color: rgb(23, 36, 218);
+  cursor: pointer;
+}
+
+.summarydatasmall:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(241, 60, 60, 0.432);
+  color: rgb(23, 36, 218);
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.colorpicker {
+  color: rgb(48, 7, 196);
+  margin-bottom: 1rem;
+}
+
+.statusnotsubmitted {
+  color: rgb(231, 16, 16);
+  font-weight: bolder;
+}
+
+.statussubmitted {
+  color: rgb(7, 119, 26);
+  font-weight: bolder;
+}
+
+.gradesubmissionstatusreportheader {
+  background-color: rgb(132, 136, 132);
+  color: white;
+}
+
+.resultrow1 {
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.resultrollnosearch {
+  font-size: larger;
+  color: blue;
+  background: none;
+}
+
+.addMultiCourseSlotRow {
+  padding: .1%;
+  margin: .5%;
+}
+
+.tdspan-1 {
+  display: flex;
+  margin: 10%;
+  border-style: dotted;
+}
+
+.programSubmissionDetailsMain {
+  background-color: rgb(211, 194, 194);
+  margin: 2%;
+  padding: .5%;
+}
+
+.progname {
+  font-size: larger;
+}
+
+.progSubmissionData {
+  font-size: larger;
+  margin: 10%;
+}
+
+.programSubmissionDetails {
+  cursor: pointer;
+}
+
+.crgdsummarydata {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgb(241, 130, 130);
+  color: rgb(221, 224, 233);
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.crgdsummarydataclickable {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgb(241, 130, 130);
+  color: rgb(221, 224, 233);
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+}
+.crgdsummarydataclickable:hover {
+  background: rgb(185, 21, 21);
+  color: rgb(255, 255, 255);
+}
+
+
+
+.showRegisteredStudents {
+  display: block;
+}
+
+.hideRegisteredStudents {
+  display: none;
+}
+
+.RegisteredStudents {
+  margin: 1%;
+  padding: 1%;
+}
+
+.notRegisteredStudents {
+  margin: 1%;
+  padding: 1%;
+}
+
+.showRow {}
+
+.hideRow {
+  display: none;
+  background-color: aqua;
+}
+
+.searchbox1 {
+  width: 100%;
+}
+.searchbox2 {
+  letter-spacing: 2px;
+  color:rgb(214, 22, 141);
+}
+
+.makelightblue {
+  background-color: rgb(116, 116, 204);
+}
+
+.gsdsummarydata {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgb(241, 130, 130);
+  color: rgb(221, 224, 233);
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.gsdsummarydataWithGrades {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgb(4, 182, 236);
+  color: rgb(221, 224, 233);
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.gsdsummarydataWithGrades:hover {
+  background-color: rgb(34, 64, 161);
+  cursor: pointer;
+}
+
+.gsdsummarydata:hover {
+  background-color: rgb(34, 64, 161);
+  cursor: pointer;
+}
+
+.semester {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: rgb(40, 194, 214);
+  color: rgb(255, 255, 255);
+  font-size: smaller;
+  margin:.5rem;
+}
+
+.semester:hover {
+  background-color: rgb(106, 157, 163);
+  cursor: pointer;
+}
+
+.semesterSV {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: rgb(216, 39, 163);
+  color: rgb(255, 255, 255);
+  font-size: smaller;
+  margin:.5rem;
+}
+.btnStudentView
+{
+  background-color: rgb(216, 39, 163)!important;
+  margin:2vh!important;
+  color: white!important;
+}
+.btnAdminView
+{
+  background-color: rgb(40, 194, 214)!important;
+  margin:2vh!important; color: white!important;
+}
+
+.semesterSV:hover {
+  background-color: rgb(106, 157, 163);
+  cursor: pointer;
+}
+
+.gsdsummarydatasubmitted {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgba(250, 193, 4, 0.952);
+  color: rgb(34, 35, 37);
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.gsdsummarydatasubmitted:hover {
+  background-color: rgb(34, 64, 161);
+  cursor: pointer;
+}
+
+.gsdsummarydataHodsubmitted {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgb(4, 107, 27);
+  color: rgb(221, 224, 233);
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.gsdsummarydataHodsubmitted:hover {
+  background-color: rgb(34, 64, 161);
+  cursor: pointer;
+}
+
+.coeButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: rgb(9, 187, 211);
+  color: rgb(249, 255, 251);
+  font-weight: bolder;
+  font-size: medium;
+  padding: 2%;
+}
+
+.coeButton:hover {
+  background-color: rgba(3, 58, 209, 0.89);
+  color: rgb(254, 254, 255);
+  cursor: pointer;
+}
+
+.coeHome {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgb(231, 59, 7);
+  color: rgb(249, 255, 251);
+  font-weight: bolder;
+  font-size: medium;
+  padding: 2%;
+}
+
+.coeHome:hover {
+  background-color: rgba(3, 58, 209, 0.89);
+  color: rgb(254, 254, 255);
+  cursor: pointer;
+}
+
+.coeRow {
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+.textCoe {
+  color: rgb(4, 107, 27);
+}
+
+.textHod {
+  color: rgba(153, 118, 2, 0.952);
+}
+
+.textFac {
+  color: rgb(167, 17, 17);
+}
+.textFacWithGrade {
+  color: rgb(8, 149, 243);
+}
+
+
+.optiondisplay1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: rgb(6, 184, 207);
+  color: rgb(249, 255, 251);
+  font-weight: bolder;
+  font-size: small;
+  padding: 1%;
+}
+
+.optiondisplay1:hover {
+  background-color: rgba(3, 58, 209, 0.89);
+  color: rgb(254, 254, 255);
+  cursor: pointer;
+}
+
+.btnEditProfile {
+  color: rgb(58, 214, 11);
+  cursor: pointer;
+}
+
+.btnEditProfile:hover {
+  color: blue;
+}
+
+.mytable12
+{
+border-collapse: separate;
+border-spacing: 0 1vh;
+}
+
+.bordertrow
+{   
+  border: none !important;
+  border-top:.1vh solid rgb(5, 131, 11)!important;
+  border-left:.1vh solid rgb(5, 131, 11)!important;
+  border-right:.1vh solid rgb(5, 131, 11)!important;
+}
+
+.bordermrow
+{
+  border: none !important;
+  border-left:.1vh solid rgb(5, 131, 11)!important;
+  border-right:.1vh solid rgb(5, 131, 11)!important;
+}
+
+.borderbrow
+{
+  border: none !important;
+  border-left:.1vh solid rgb(5, 131, 11)!important;
+  border-right:.1vh solid rgb(5, 131, 11)!important;
+  border-bottom:.1vh solid rgb(5, 131, 11)!important;
+}
+.blankrow
+{
+  border: none, !important;
+  min-height: 5vh;
+}
+.bordertopbottom
+{
+  border-top:.1vh solid tomato!important;
+  border-bottom:.1vh solid tomato!important;
+}
+.bordertopbottomblack
+{
+  border-top:.1vh solid rgb(136, 133, 133)!important;
+  border-bottom:.1vh solid rgb(136, 133, 133)!important;
+}
+
+.data1
+{
+  font-size:1rem; 
+}
+.data2
+{
+  font-size:1rem;  
+  color:rgb(10, 108, 236)!important;
+}
+.datacell
+{
+  margin-left:2%;margin-right:2%;margin-top:1vh;margin-bottom:1vh;
+}
+.datacell2
+{
+ margin-top:1%;margin-bottom:1%;
+}
+.description
+{
+  cursor: pointer;
+  color:rgb(223, 19, 155)!important;
+  letter-spacing: 2px;
+}
+.descriptionSV
+{
+  cursor: pointer;
+  color:rgb(10, 108, 236)!important;
+}
+.hideList
+{
+  display: none!important;
+}
+.changeTerm
+{
+  cursor: pointer;
+  color:rgb(245, 94, 6)!important;
+}
+.addMargin3
+{
+  margin: 2vh;
+}
+.display-5
+{
+  font-size: 1.5rem;
+}
+
+.display-6
+{
+  font-size: 1rem;
+}
+.divStep1
+{
+  background-color: rgb(40, 184, 194);
+  color:white;
+  font-size:1rem;
+  cursor: pointer;
+  border-radius: 2vh;
+  padding:1vh;
+  margin: 1vh;
+}
+
+.divStep1:hover
+{
+  background-color: rgb(117, 111, 175);
+}
+
+.divStep2
+{
+  background-color: rgb(40, 184, 194);
+  color:white;
+  font-size:1rem;
+  cursor: pointer;
+  border-radius: 2vh;
+  padding:1vh;
+  margin: 1vh;
+}
+.divStep2:hover
+{
+  background-color: rgb(117, 111, 175);
+}
+
+.divStep3
+{
+  background-color: rgb(40, 184, 194);
+  color:white;
+  font-size:1rem;
+  cursor: pointer;
+  border-radius: 2vh;
+  padding:1vh;
+  margin: 1vh;
+}
+.divStep3:hover
+{
+  background-color: rgb(117, 111, 175);
+}
+
+
+.divStep4
+{
+  background-color: rgb(40, 184, 194);
+  color:rgb(202, 26, 64);
+  font-size:1rem;
+  cursor: pointer;
+  border-radius: 2vh;
+  padding:1vh;
+  margin: 1vh;
+}
+.divStep4:hover
+{
+  background-color: rgb(117, 111, 175);
+}
+
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+.rs{
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+.divStepFix
+{
+  background-color: rgb(223, 19, 155);
+}
+.myfont
+{
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.data3
+{
+  
+  color:rgb(5, 176, 228)!important;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+.data7
+{
+ 
+  color:rgb(5, 176, 228)!important;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  min-width: 15vh;
+}
+.data4
+{
+ 
+  color:rgb(5, 176, 228)!important;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+.data5
+{
+  
+  color:rgb(5, 176, 228)!important;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  min-width: 6vh;
+  min-height: 6vh;
+  border-radius: 50%;
+}
+.data5Spcl
+{
+  
+  color:rgb(5, 176, 228)!important;
+  letter-spacing: 2px;
+  font-size: 1.15rem;
+  min-width: 12vh;
+  border-radius: 50%;
+  word-wrap:break-all!important;
+  text-align: center;
+}
+
+.data6
+{
+  color:rgb(223, 19, 155)!important;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}

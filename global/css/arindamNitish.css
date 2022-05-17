@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: initial;
+    background: #b8dbd9;
+}
+
+.logoutDiv {
+    display: flex;
+    justify-content:space-between;
+    padding:1% 1% 0% 1% ;
+}
+
+.firstHeader {
+    color: rgb(223, 19, 155);
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.secondHeader {
+    color: rgb(5, 176, 228);
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+.verified {
+    background-color: #91FF77;
+}
+
+.notverified {
+    background-color: #FF5555;
+}
+
+.studentCard{
+    display:flex;
+    flex-direction: column; 
+    width:inherit;
+    margin: 0.1vmax;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.studentCard:hover{
+    transform: translateY(-0.4vmax);
+    box-shadow: 0px 6px 15px rgba(10, 10, 10, 0.363);
+}
+
+
+.mainDiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    width: 80%;
+    height: 50%;
+}
+
+.loginTextBox {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px;
+}
+
+#lblErrorMessage {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 0, 0);
+    padding-bottom: 1em;
+}
+
+.makeDark {
+    background-color: black;
+}
+
+.loginButtons{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    text-decoration: none;
+}
+#semesterShow,#courseShow {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.selectSemValue, .selectCourseValue{
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 10px 10px;
+    color: whitesmoke;
+    background-color: #08788ab5;
+}
+
+#semesterShow :hover {
+    transform: translateY(-0.4vmax);
+    box-shadow: 0px 6px 15px rgba(10, 10, 10, 0.363);
+}
+
+#selectSem {
+    /* background-color: #91FF77; */
+    border-radius: 7px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* new updates */
+.text-info{
+    font-family: initial;
+    font-size: xxx-large;
+}
+
+.fontStyle{
+    
+    font-family: serif;
+    Font : Times New Roman;
+    font-size: 16px;
+    padding-top: 10px;
+    text-align:end;
+
+  
+}
+
+.fullHeight{
+    display: flex;
+}
+
+.Button {
+    background-color: #a7c957;
+    color: #0d3b66;
+    border-radius: 10px 10px;
+    padding-top: 30px;
+    width: 150px;
+    height: 100px;
+}
+
+.colRow :hover {
+    cursor: pointer;
+    color: black;
+    background-color: #62b6cb;
+    transform: translateY(-0.6vmax);
+    box-shadow: 0px 6px 15px rgba(10, 10, 10, 0.363);
+}
+
+.darkfont {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.FacultyName {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    color: #2f3e46;
+}
+
+.new4 {
+    margin-top: 340px;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #e7d8c9;
+    border-radius: 10px;
+}
+
+.center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.txt-field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt-field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt-field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt-field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.txt-field input:focus~label,
+.txt-field input:valid~label {
+    top: -10px;
+    color: #2691d9;
+}
+
+.txt-field input:focus~span::before,
+.txt-field input:valid~span::before {
+    width: 100%;
+}
+
+.pass {
+    margin: -5px 0 20px 5px;
+    color: #023047;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+.loginButton {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 50%;
+    height: 50%;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
+}
