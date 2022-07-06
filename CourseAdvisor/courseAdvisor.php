@@ -11,7 +11,7 @@ if (!$_SESSION['set']) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VerifyCourseAdvisors</title>
+  <title>VERIFY COURSE ADVISOR</title>
   <link rel="stylesheet" href="/workspace/global/css/style1.css">
   <link rel="stylesheet" href="/workspace/global/css/bootstrap.min.css">
   <link rel="stylesheet" href="/workspace/global/css/font-awesome.min.css">
@@ -22,7 +22,7 @@ if (!$_SESSION['set']) {
   <header>
   </header>
   <div class="logoutDiv">
-   <button type="button" class="btn btn-secondary" id="btnBack" disabled>&laquo;BACK</button>
+   <button type="button" class="btn btn-secondary" id="btnBack">&laquo;BACK</button>
     <button type="button" class="btn btn-danger" id="btnLogOut">Logout</button>
     </div>
   <main class=" container">

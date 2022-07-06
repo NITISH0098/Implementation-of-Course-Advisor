@@ -3,6 +3,8 @@ session_start();
 if (!$_SESSION['set']) {
   header('location:/workspace/CourseAdvisor/login.php');
 }
+if(file_exists('C:\xampp\htdocs\tempPDF\tempPDF.pdf'))
+      {unlink('C:\xampp\htdocs\tempPDF\tempPDF.pdf');}
 ?>
 
 
@@ -12,7 +14,7 @@ if (!$_SESSION['set']) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GRADE ENTRY</title>
+  <title>STUDENT REPORT</title>
   <link rel="stylesheet" href="/workspace/global/css/style1.css">
   <link rel="stylesheet" href="/workspace/global/css/bootstrap.min.css">
   <link rel="stylesheet" href="/workspace/global/css/font-awesome.min.css">
@@ -31,29 +33,21 @@ if (!$_SESSION['set']) {
     <!-- mainContainer makefullscreen -->
     <div class="row rowMargin">
       <div class="col">
-        <span class="d-flex justify-content-center text-info display-4">Grade Entry</span>
+        <span class="d-flex justify-content-center text-info display-4">STUDENT'S REPORT</span>
       </div>
     </div>
     <br>
-    <div class="row" id="session" style="margin-bottom: 2%; margin-top:4%">
+  <div class="row" style="margin-left: 350px">
+    <input class="col-sm-4" type="text"  id="rollnoID"  placeholder="Enter Enrollment No">
+    <button  type="submit" class=" col-sm-2 btn btn-primary" id="btnShowPdf" style="margin-left: 20px;">Submit</button>   <div id="lblErrorMessage" style="margin-left: 20px;"> </div>
+  
+  </div>
+
+
+    <div id="showStudentReport">
+         
+    </div>
      
-    </div>
-    <div class="row" id="showCourse" style="margin-bottom: 2% ;margin-top:3%;padding-top:10px;">
-   
-    </div>
-
-    <div id="showStudents" style="margin-bottom: 2%; margin-top:3%">
-
-    </div>
-
-
-    <div class="row">
-      <div class="col-12" id="divMainContainer">
-
-      </div>
-    </div>
-
-
     <nav id="pagination">
     </nav>
     <input type="hidden" name="currentpage" id="currentpage" value="1">
@@ -68,8 +62,7 @@ if (!$_SESSION['set']) {
     <script src="/workspace/global/js/popper.min.js"></script>
     <script src="/workspace/global/js/bootstrap.min.js"></script>
     <script src="/workspace/global/js/bootstrap.min.js"></script>
-    <script src="/workspace/CourseAdvisor/js/gradeEntry.js"></script>
-    <!-- <script src="/workspace/CourseAdvisor/js/courseAdvisorJS.js"></script> -->
+    <script src="/workspace/CourseAdvisor/js/studentReportJS.js"></script>
   </div>
   <div id="overlay" style="display:none;">
     <div class="spinner-border text-danger" style="width: 3rem; height: 3rem;"></div>

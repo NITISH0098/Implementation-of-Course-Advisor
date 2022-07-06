@@ -92,7 +92,9 @@ if ( !empty($action)) {
 
            $result = $dbo->assignFaculty($facultyId,$studentId);
            echo json_encode($result);
+           exit();
         }
- 
+    
+   
 
 }

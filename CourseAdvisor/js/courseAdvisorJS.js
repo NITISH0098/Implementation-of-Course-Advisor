@@ -15,7 +15,7 @@ function getddlProgramHTML(r) {
 function getddlSessionHTML(r) {
     let html = `<select name="selectDiv"  id="divSelect"   style="width: 100%;">`;
     html = html + `<option value=-1>Please Select</option>`;
-    for (let i = 0; i < r.length; i++) {
+    for (let i = r.length - 1; i >= 0; i--) {
         html = html + `<option value="${r[i].sessionID}">`;
         html = html + `${r[i].termYear}` + ` ` +
             `${r[i].termType}`;
@@ -92,7 +92,8 @@ function getSemester(r, termType) {
 }
 
 function studentDisp(r) {
-        let html = `<div class="row" style="padding-top:10px;">
+    let val = 5;
+    let html = `<div class="row" style="padding-top:10px;">
         <div class="col ">
              <b>SL NO</b>
         </div>
@@ -103,39 +104,45 @@ function studentDisp(r) {
            <b>FACULTY</b>
         </div>
         </div>`;
-        for ($i = 0; $i < r["student"].length; $i++) {
-            html = html + `<div class="row" style="padding-top:5px;" >
+    for ($i = 0; $i < r["student"].length; $i++) {
+
+        html = html + `<div class="row" style="padding-top:5px;" >
               <div class="col  ">
                    ${$i+1}
               </div>  
               <div class="col  ">
                  ${r["student"][$i]}
               </div>
-              <div class="col" id="FacultyList">
-              <select name="selectFaculty" class="divSelectFacultyClass" id="divSelectFaculty${$i}" data-studentid= ${r["sid"][$i]} style="width: 100%;">
-              <option value=-1 disabled selected>`;
-              
-              if(r["facultyName"][$i]!= -1)
-                   {
-                       $string = r["facultyName"][$i];
-                   }
-             else
-               {
-                   $string = "Please Select";
-               }
-              html=html+ `${$string}</option>`;
-              for (let $j = 0; $j < r["faculty"].length; $j++) {
-                html = html + `<option value="${r["fid"][$j]}">`;
-                html = html + `${r["faculty"][$j]}`;
-                html = html + ` </option>`;
-            }
-            html = html + `</select>
-              </div>
-          </div>`;
+              <div class="col" id="FacultyList">`;
+        if (r.currentSession == val) {
+            html = html + `<select name="selectFaculty" class="divSelectFacultyClass" id="divSelectFaculty${$i}" data-studentid= ${r["sid"][$i]} style="width: 100%;">
+                <option value=-1 disabled selected>`;
+        } else {
+            html = html + `<select name="selectFaculty" class="divSelectFacultyClass" id="divSelectFaculty${$i}" data-studentid= ${r["sid"][$i]} style="width: 100%;" disabled>
+                <option value=-1 disabled selected>`;
         }
-        return html;
+
+
+        if (r["facultyName"][$i] != -1) {
+            $string = r["facultyName"][$i];
+        } else {
+            $string = "Please Select";
+        }
+        html = html + `${$string}</option>`;
+        for (let $j = 0; $j < r["faculty"].length; $j++) {
+            html = html + `<option value="${r["fid"][$j]}">`;
+            html = html + `${r["faculty"][$j]}`;
+            html = html + ` </option>`;
+        }
+        html = html + `</select>`
+
+        html = html + `</div>
+          </div>`;
+    }
+    return html;
 }
 
+//entry point
 $(function(e) {
     loadProgram();
     loadSession();
@@ -152,10 +159,9 @@ $(function(e) {
     $(document).on("change", "#divSelectProg", function() {
 
         let e = document.getElementById("divSelectProg");
-        //console.log(e)
         let optionValue = e.options[e.selectedIndex].value;
         $("#programId").val(optionValue);
-        // console.log(optionValue)
+
     })
 
     $(document).on("click", "#selectSem", function() {
@@ -203,19 +209,16 @@ $(function(e) {
             success: function(result) {
                 $("#overlay").fadeOut();
                 console.log(result);
-                if(result.length==0)
-                  {
+                if (result.length == 0) {
                     $("#showStudents").html(`<div style="display:flex;justify-content:center"> <b>NO DATA FOUND </b></div>`);
-                  }
-                else
-                 {
+                } else {
                     html = studentDisp(result);
                     $("#showStudents").html(html);
-                 }
-               
-               
-             
-            
+                }
+
+
+
+
             },
             error: function(e) {
                 alert(e);
@@ -225,23 +228,22 @@ $(function(e) {
         });
     });
 
-     $(document).on("change", ".divSelectFacultyClass", function() {
-        let id =this.id;
+    $(document).on("change", ".divSelectFacultyClass", function() {
+        let id = this.id;
         let e = document.getElementById(`${id}`);
-        let data=$(this).data('studentid');
-        let optionValue = e.options[e.selectedIndex].value;  // $(`#${id}`).val();
-         let facultyId = optionValue;
-         let studentId = data;
+        let data = $(this).data('studentid');
+        let optionValue = e.options[e.selectedIndex].value; // $(`#${id}`).val();
+        let facultyId = optionValue;
+        let studentId = data;
         $.ajax({
             url: "/workspace/businessAjax/courseAdvisorAJAX.php",
             type: "POST",
             dataType: "json",
-            data: { facultyId:facultyId,studentId:studentId, action: "assignFaculty" },
-            beforeSend: function() {
-            },
+            data: { facultyId: facultyId, studentId: studentId, action: "assignFaculty" },
+            beforeSend: function() {},
             success: function(result) {
                 console.log(result);
-                
+
             },
             error: function(e) {
                 console.log(e);
@@ -249,14 +251,14 @@ $(function(e) {
                 $("#overlay").fadeOut();
             },
         });
-       
-     })
 
-     $(document).on("click", "#btnLogOut", function() {
+    })
+
+    $(document).on("click", "#btnLogOut", function() {
         document.location.replace("/workspace/CourseAdvisor/logout.php")
     });
-     
+
     $(document).on("click", "#btnBack", function() {
-        document.location.replace("/workspace/CourseAdvisor/dashboard.php")
+        document.location.replace("/workspace/CourseAdvisor/HodDashboard.php")
     });
 });

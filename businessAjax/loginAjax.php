@@ -10,7 +10,8 @@
        {
           $un = $_POST["username"];
           $pw = $_POST["password"];
-          $id = $dbo->getHID($un,$pw);
+          $result = $dbo->getHID($un,$pw);
+          $id = $result['hid'][0];
           $status = "";
           if($id==-1)
              {
@@ -27,7 +28,9 @@
                 { 
                   session_start(); 
                 } 
-             $_SESSION['hid']=$id;
+             $_SESSION['hid']=$result['hid'][0];
+             $_SESSION['fname'] = $result['hname'][0];
+             $_SESSION['dname'] = $result['dname'][0];
              $_SESSION['set']= 1;
              $_SESSION['loginAs']= "hod";
              $status="OK";

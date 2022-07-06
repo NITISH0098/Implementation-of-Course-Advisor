@@ -20,13 +20,17 @@ $(document).ready((function(e) {
                 url: "/workspace/businessAjax/loginAjax.php",
                 type: "POST",
                 dataType: "json",
-                data: { username: trimmedUn, password: trimmedpw, action: "loginHandlerHOD" },
+                data: {
+                    username: trimmedUn,
+                    password: trimmedpw,
+                    action: "loginHandlerHOD"
+                },
                 beforeSend: function() {
 
                 },
                 success: function(result) {
                     if (result.status == "OK") {
-                        document.location.replace("/workspace/CourseAdvisor/courseAdvisor.php")
+                        document.location.replace("/workspace/CourseAdvisor/HodDashboard.php")
 
                     } else {
                         $("#lblErrorMessage").text("INVALID USERNAME AND PASSWORD");
@@ -63,7 +67,11 @@ $(document).ready((function(e) {
                 url: "/workspace/businessAjax/loginAjax.php",
                 type: "POST",
                 dataType: "json",
-                data: { username: trimmedUn, password: trimmedpw, action: "loginHandlerFaculty" },
+                data: {
+                    username: trimmedUn,
+                    password: trimmedpw,
+                    action: "loginHandlerFaculty"
+                },
                 beforeSend: function() {
 
                 },
@@ -71,6 +79,7 @@ $(document).ready((function(e) {
                     if (result.status == "OK") {
                         document.location.replace("/workspace/CourseAdvisor/dashboard.php")
                     } else {
+                        console.log(result);
                         $("#lblErrorMessage").text("INVALID USERNAME AND PASSWORD");
                     }
 

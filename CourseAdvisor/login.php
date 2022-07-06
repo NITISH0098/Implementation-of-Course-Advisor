@@ -7,7 +7,7 @@ if(isset($_SESSION['set']))
         }
       if($_SESSION['loginAs']=='hod')
        {
-        header('location:/workspace/CourseAdvisor/courseAdvisor.php');
+        header('location:/workspace/CourseAdvisor/HodDashboard.php');
        }
   }
 ?>
@@ -16,10 +16,11 @@ if(isset($_SESSION['set']))
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>LOGIN</title>
     <link rel="stylesheet" href="/workspace/global/css/bootstrap.min.css">
     <link rel="stylesheet" href="/workspace/global/css/font-awesome.min.css">
     <link rel="stylesheet" href="/workspace/global/css/arindamNitish.css">

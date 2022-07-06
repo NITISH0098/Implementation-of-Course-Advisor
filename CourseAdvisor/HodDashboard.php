@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 if (!$_SESSION['set']) {
@@ -14,7 +13,7 @@ if (!$_SESSION['set']) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DASHBOARD</title>
+    <title>HOD DASHBOARD</title>
     <link rel="stylesheet" href="/workspace/global/css/style1.css">
     <link rel="stylesheet" href="/workspace/global/css/bootstrap.min.css">
     <link rel="stylesheet" href="/workspace/global/css/font-awesome.min.css">
@@ -61,14 +60,21 @@ if (!$_SESSION['set']) {
                                     <div class="col d-flex justify-content-center colRow">
                                         <div class="Button" id="buttonGrade">
                                             <div class="text-center">
-                                                GRADE ENTRY
+                                                COURSE & FACULTY 
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col d-flex justify-content-center colRow">
-                                        <div class="Button" id="buttonStudentRegistration">
+                                        <div class="Button" id="buttonCourseAdvisor">
                                             <div class="text-center">
-                                                COURSE ADVISOR
+                                                COURSE ADVISOR 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex justify-content-center colRow">
+                                        <div class="Button" id="buttonStudentReport">
+                                            <div class="text-center">
+                                                STUDENTS REPORT
                                             </div>
                                         </div>
                                     </div>
@@ -90,7 +96,7 @@ if (!$_SESSION['set']) {
         <script src="/workspace/global/js/popper.min.js"></script>
         <script src="/workspace/global/js/bootstrap.min.js"></script>
         <script src="/workspace/global/js/bootstrap.min.js"></script>
-        <script src="/workspace/CourseAdvisor/js/dashboard.js"></script>
+        <script src="/workspace/CourseAdvisor/js/HodDashboardJS.js"></script>
     </div>
     <div id="overlay" style="display:none;">
         <div class="spinner-border text-danger" style="width: 3rem; height: 3rem;"></div>

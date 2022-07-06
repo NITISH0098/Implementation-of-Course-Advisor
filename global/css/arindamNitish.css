@@ -7,8 +7,8 @@ body {
 
 .logoutDiv {
     display: flex;
-    justify-content:space-between;
-    padding:1% 1% 0% 1% ;
+    justify-content: space-between;
+    padding: 1% 1% 0% 1%;
 }
 
 .firstHeader {
@@ -31,20 +31,30 @@ body {
     background-color: #FF5555;
 }
 
-.studentCard{
-    display:flex;
-    flex-direction: column; 
-    width:inherit;
+.studentCard {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
     margin: 0.1vmax;
     transition: all 0.5s;
     cursor: pointer;
 }
 
-.studentCard:hover{
+#courseShow {
+    display: flex;
+    width: inherit;
+    margin: 0.1vmax;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.studentCard:hover,
+.courseStyle:hover {
     transform: translateY(-0.4vmax);
     box-shadow: 0px 6px 15px rgba(10, 10, 10, 0.363);
 }
-
 
 .mainDiv {
     width: 100%;
@@ -75,19 +85,21 @@ body {
     background-color: black;
 }
 
-.loginButtons{
-    width:100%;
-    display:flex;
-    justify-content:space-between;
+.loginButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
 }
-#semesterShow,#courseShow {
+
+#semesterShow {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.selectSemValue, .selectCourseValue{
+.selectSemValue,
+.selectCourseValue {
     transition: all 0.5s;
     cursor: pointer;
     padding: 30px;
@@ -107,24 +119,23 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 /* new updates */
-.text-info{
+
+.text-info {
     font-family: initial;
     font-size: xxx-large;
 }
 
-.fontStyle{
-    
+.fontStyle {
     font-family: serif;
-    Font : Times New Roman;
+    Font: Times New Roman;
     font-size: 16px;
     padding-top: 10px;
-    text-align:end;
-
-  
+    text-align: end;
 }
 
-.fullHeight{
+.fullHeight {
     display: flex;
 }
 
@@ -267,4 +278,63 @@ input[type="submit"] {
 input[type="submit"]:hover {
     border-color: #2691d9;
     transition: .5s;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+/*SideBar*/
+
+#sidebar {
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li {
+    list-style: none;
+    padding-top: 3px;
+}
+
+
+/* #sidebar ul li div {
+    background-color: #2f3e46;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li div:hover {
+    color: #7386D5;
+    background: #fff;
+} */
+
+#sidebar ul li div {
+    display: block;
+    flex-direction: column;
+    width: inherit;
+    margin: 0.1vmax;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #b8dbd9;
+    background-color: #2f3e46;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#sidebar ul li div:hover {
+    transform: translateY(-0.4vmax);
+    box-shadow: 0px 6px 15px rgba(10, 10, 10, 0.363);
 }

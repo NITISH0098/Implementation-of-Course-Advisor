@@ -10,7 +10,7 @@ class DatabaseConnection{
     public function __construct()
     {
         try {
-            $this->conn = new PDO("mysql:host=$this->servername;port=3307;dbname=$this->myDatabase", $this->username, $this->password);
+            $this->conn = new PDO("mysql:host=$this->servername;dbname=$this->myDatabase", $this->username, $this->password);
             // set the PDO error mode to exception
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
            // echo "Connected successfully";

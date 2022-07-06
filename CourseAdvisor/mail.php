@@ -1,5 +1,5 @@
 <?php
-$receiver = "csm20035@tezu.ac.in";
+$receiver = "csm20015@tezu.ac.in";
 $subject = "Email Test via PHP using Localhost";
 $body = "Hi, there...This is a test email send from Localhost.";
 $sender = "From:unofficialpurpose11@gmail.com";
