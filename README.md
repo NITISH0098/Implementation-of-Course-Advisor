@@ -1,0 +1,2 @@
+# Implementation-of-Course-Advisor
+This is a web-based application for assigning the faculties in the role of course advisor for the student of Tezpur University.Course Advisor play a crucial role in the student's course registration process based on their previous semester academic result.This website is build using HTML , CSS , Bootstrap , JavaScript and jQuery for the front-end and PHP and MYSQL for the back-end.
